@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone, Linkedin, Github, Link, Globe } from 'lucide-react';
+import myImg from '../assets/myImg.png';
 
 export const Sidebar: React.FC = () => {
   return (
@@ -8,7 +9,7 @@ export const Sidebar: React.FC = () => {
       <div className="flex flex-col items-center mb-6">
         <div className="w-32 h-32 md:w-36 md:h-36 rounded-full overflow-hidden border border-google-gray-border dark:border-google-gray-darkborder mb-4 bg-gray-50 dark:bg-google-dark-body">
           <img
-            src="/myImg.png"
+            src={myImg}
             alt="Aman Pal"
             className="w-full h-full object-cover object-center"
             onError={(e) => {
